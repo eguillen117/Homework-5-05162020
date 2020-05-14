@@ -20,31 +20,55 @@
         <p id="currentDay" class="lead"></p>
     </header>
 
-    <!-- Attempting to create rows/table -->
-    <div class="container" style=max-width:800px;>
-        <div class="table1">
-            <table class="table2">
-                <tbody id="Calendar-content">
+    <!-- creating the table inside container -->
+    <div class="container" style="max-width: 900px;">
+        <!-- Timeblocks go here -->
+        <div class="table-responsive">
+            <table class="table">
+                <tbody id="calendar-content">
                 </tbody>
             </table>
         </div>
+    </div>
+    <script>
+
+        //Creating variables/let statements
+        let calendarData = [
+            {
+                hour: '8AM',
+                event: textareaInput,
+                id: '1'
+            },
+            {
+                hour: '9AM',
+                event: textareaInput,
+                id: '2'
+            },
+            {
+                hour: '10AM',
+                event: textareaInput,
+                id: '3'
+            }
+        ];
+
+        //this should be the empty area to allow the user to add text. 
+        var userInput = '';
+        // start of function... should this be in a sep file or embedded all in index.html?
+        $(document).ready(function () {
+            //moment.js code should get current date....
+            $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
+            //userText created for user content. 
+            let userText = $('#userContent');
+
+        });
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 </body>
-
-<!-- Timeblocks go here -->
-<script>
-
-</script>
-
-
-
-</div>
-<script src="script.js">
-</script>
-<script src=" https://code.jquery.com/jquery-3.4.1.min.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js></script>
-
-
 
 </html>
