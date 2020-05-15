@@ -2,6 +2,11 @@
 //< !--End of Script Sources JQUERY and Moment.js ================================================
 // Start of Function ===================================
 
+//getting the localStorage key values
+if (localStorage.getItem('calendarData') !== null) {
+	calendarData = JSON.parse(localStorage.getItem('calendarData'));
+}
+
 $(document).ready(function() {
 	console.log('Function is ready');
 
@@ -12,25 +17,6 @@ $(document).ready(function() {
 	// Testing to see if the moment is console logging correctly
 	const m = moment();
 	console.log(m.toString());
-
-	//Creating variables/let statements
-	// let calendarData = [
-	// 	{
-	// 		hour: '8AM',
-	// 		event: textareaInput,
-	// 		id: '1'
-	// 	},
-	// 	{
-	// 		hour: '9AM',
-	// 		event: textareaInput,
-	// 		id: '2'
-	// 	},
-	// 	{
-	// 		hour: '10AM',
-	// 		event: textareaInput,
-	// 		id: '3'
-	// 	}
-	// ];
 
 	//this should be the empty area to allow the user to add text.
 	var userInput = '';
