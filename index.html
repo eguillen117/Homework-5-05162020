@@ -24,62 +24,64 @@
 
     <!-- START of Time Blocks ==================== -->
 
+    <div class="TimeBlocks" style="max-width: 900px;">
+        <!-- Timeblocks go here -->
+        <div class="tableTime">
+            <table class="table">
+                <tbody id="calendar-content">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
     <!-- Script Sources JQUERY and Moment.js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
-
-        // < !--End of Script Sources JQUERY and Moment.js =====================
+        //< !--End of Script Sources JQUERY and Moment.js =====================
         // Start of Function ===================================
+
         $(document).ready(function () {
             console.log("Function is ready");
 
-    < !--creating the table inside container-- >
-                <div class="container" style="max-width: 900px;">
-                    <!-- Timeblocks go here -->
-        <div class="table-responsive">
-                        <table class="table">
-                            <tbody id="calendar-content">
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <script>
 
-        // Testing to see if the moment is console logging correctly
-                    const m = moment();
-                    console.log(m.toString());
 
-                    //Creating variables/let statements
-                    let calendarData = [
-            {
-                        hour: '8AM',
-                event: textareaInput,
-                id: '1'
-            },
-            {
-                        hour: '9AM',
-                event: textareaInput,
-                id: '2'
-            },
-            {
-                        hour: '10AM',
-                event: textareaInput,
-                id: '3'
-            }
-        ];
 
-        //this should be the empty area to allow the user to add text.
-        var userInput = '';
-        // start of function... should this be in a sep file or embedded all in index.html?
-        $(document).ready(function () {
-                        //moment.js code should get current date....
-                        $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
+            // Testing to see if the moment is console logging correctly
+            const m = moment();
+            console.log(m.toString());
 
-            //userText created for user content. 
-            let userText = $('#userContent');
+            //Creating variables/let statements
+            let calendarData = [
+                {
+                    hour: '8AM',
+                    event: textareaInput,
+                    id: '1'
+                },
+                {
+                    hour: '9AM',
+                    event: textareaInput,
+                    id: '2'
+                },
+                {
+                    hour: '10AM',
+                    event: textareaInput,
+                    id: '3'
+                }
+            ];
 
-        });
+            //this should be the empty area to allow the user to add text.
+            var userInput = '';
+            // start of function... should this be in a sep file or embedded all in index.html?
+            $(document).ready(function () {
+                //moment.js code should get current date....
+                $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
+
+                //userText created for user content. 
+                let userText = $('#userContent');
+
+            });
 
     </script>
 
