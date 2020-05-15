@@ -22,8 +22,9 @@
     </header>
     <!-- ===== End of Header =========================  -->
 
-    <!-- START of Time Blocks ==================== -->
+    <!-- START of Time Blocks ================================================================= -->
 
+    <!-- Div Class to hold Timeblock -->
     <div class="TimeBlocks" style="max-width: 900px;">
         <!-- Timeblocks go here -->
         <div class="tableTime">
@@ -39,13 +40,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
-        //< !--End of Script Sources JQUERY and Moment.js =====================
+        //< !--End of Script Sources JQUERY and Moment.js ================================================
         // Start of Function ===================================
 
         $(document).ready(function () {
             console.log("Function is ready");
 
-
+            console.log(moment().format('dddd') + moment().format("MMM Do"));
+            console.log(moment().calendar());
+            console.log(moment().format());
 
 
             // Testing to see if the moment is console logging correctly
