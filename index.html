@@ -32,6 +32,10 @@
     </div>
     <script>
 
+        // Testing to see if the moment is console logging correctly
+        const m = moment();
+        console.log(m.toString());
+
         //Creating variables/let statements
         let calendarData = [
             {
@@ -57,6 +61,7 @@
         $(document).ready(function () {
             //moment.js code should get current date....
             $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
+
             //userText created for user content. 
             let userText = $('#userContent');
 
@@ -65,7 +70,7 @@
     </script>
 
 
-
+    <script src="/momentjs/lib/moment/moment-with-locales.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
