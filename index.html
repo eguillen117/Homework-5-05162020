@@ -25,71 +25,52 @@
     <!-- START of Time Blocks ================================================================= -->
 
     <!-- Div Class to hold Timeblock -->
-    <div class="TimeBlocks" style="max-width: 900px;">
+    <div class="TimeBlocks">
         <!-- Timeblocks go here -->
-        <div class="tableTime">
-            <table class="table">
-                <tbody id="calendar-content">
-                </tbody>
-            </table>
+        <div class="container">
+            <div class="row time-block">
+                <div class="hour col-md-1">
+                    <p>9AM</p>
+                </div>
+                <textarea class="userInput col-md-10">
+                </textarea>
+                <div class="saveButton col-md-1">
+                </div>
+            </div>
+
+            <div class="row time-block">
+                <div class="hour col-md-1">
+                    <p>9AM</p>
+                </div>
+                <textarea class="userInput col-md-10">
+                            </textarea>
+                <div class="saveButton col-md-1">
+                </div>
+            </div>
+
+            <div class="row time-block">
+                <div class="hour col-md-1">
+                    <p>9AM</p>
+                </div>
+                <textarea class="userInput col-md-10">
+                            </textarea>
+                <div class="saveButton col-md-1">
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <!-- Research local.storage and get set to be able to save button.  -->
 
     <!-- Script Sources JQUERY and Moment.js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
-        //< !--End of Script Sources JQUERY and Moment.js ================================================
-        // Start of Function ===================================
-
-        $(document).ready(function () {
-            console.log("Function is ready");
-
-            console.log(moment().format('dddd') + moment().format("MMM Do"));
-            console.log(moment().calendar());
-            console.log(moment().format());
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment-with-locales.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <script src="script.js"> </script>
 
 
-            // Testing to see if the moment is console logging correctly
-            const m = moment();
-            console.log(m.toString());
 
-            //Creating variables/let statements
-            let calendarData = [
-                {
-                    hour: '8AM',
-                    event: textareaInput,
-                    id: '1'
-                },
-                {
-                    hour: '9AM',
-                    event: textareaInput,
-                    id: '2'
-                },
-                {
-                    hour: '10AM',
-                    event: textareaInput,
-                    id: '3'
-                }
-            ];
-
-            //this should be the empty area to allow the user to add text.
-            var userInput = '';
-            // start of function... should this be in a sep file or embedded all in index.html?
-            $(document).ready(function () {
-                //moment.js code should get current date....
-                $('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
-
-                //userText created for user content. 
-                let userText = $('#userContent');
-
-            });
-
-    </script>
-
-
-    <script src="/momentjs/lib/moment/moment-with-locales.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
