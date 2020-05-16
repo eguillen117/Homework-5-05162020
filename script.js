@@ -52,12 +52,12 @@ if (localStorage.getItem('calendarData') !== null) {
 }
 
 $(document).ready(function() {
+	// Console.logs to test =============================================
 	console.log('Function is ready');
-
 	console.log(moment().format('dddd') + moment().format('MMM Do'));
 	console.log(moment().calendar());
 	console.log(moment().format());
-
+	// ===================================================================
 	// Testing to see if the moment is console logging correctly
 	const m = moment();
 	console.log(m.toString());
@@ -69,16 +69,15 @@ $(document).ready(function() {
 	$('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
 
 	//userText created for user content.
-	let userText = $('#userContent');
+	let userText = $('#userTextContent');
 
 	//creating for each object(entry) of the array calendarData appending the rows and th,td, buttons
 	calendarData.forEach((entry) => {
 		//current hour
 		var currentHour = moment().hour();
-
 		var styleClass = '';
 
-		// Develop the functionality to handle the color in each timeblock
+		// CSS styles to change the color depending on the current time
 		if (currentHour === entry.id) {
 			styleClass = 'present';
 		} else if (currentHour < entry.id) {
@@ -88,13 +87,9 @@ $(document).ready(function() {
 		}
 	});
 
-	// save button event
+	// save button event ===================================================
 	$('.saveButton').on('click', saveEvent);
-
-	/**
-	 * save event target the specific id from the button
-	 * and using this id to get the textarea associatte with it
-	 */
+	//=====
 	function saveEvent() {
 		textareaId = $(this).attr('data-ref');
 		var valueAttr = $('#' + textareaId).val();
