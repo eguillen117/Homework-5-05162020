@@ -5,42 +5,42 @@ var calendarData = [
 		id: 9
 	},
 	{
-		hour: '10AM',
+		hour: '9AM',
 		event: '',
 		id: 10
 	},
 	{
-		hour: '11AM',
+		hour: '10AM',
 		event: '',
 		id: 11
 	},
 	{
-		hour: '12PM',
+		hour: '11AM',
 		event: '',
 		id: 12
 	},
 	{
-		hour: '1PM',
+		hour: '12PM',
 		event: '',
 		id: 13
 	},
 	{
-		hour: '2PM',
+		hour: '1PM',
 		event: '',
 		id: 14
 	},
 	{
-		hour: '3PM',
+		hour: '2PM',
 		event: '',
 		id: 15
 	},
 	{
-		hour: '4PM',
+		hour: '3PM',
 		event: '',
 		id: 16
 	},
 	{
-		hour: '5PM',
+		hour: '4PM',
 		event: '',
 		id: 17
 	}
