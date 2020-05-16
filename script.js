@@ -52,43 +52,47 @@ if (localStorage.getItem('calendarData') !== null) {
 }
 
 $(document).ready(function() {
-	// Console.logs to test =============================================
-	console.log('Function is ready');
-	console.log(moment().format('dddd') + moment().format('MMM Do'));
-	console.log(moment().calendar());
-	console.log(moment().format());
-	// ===================================================================
-	// Testing to see if the moment is console logging correctly
-	const m = moment();
-	console.log(m.toString());
+	// // Console.logs to test =============================================
+	// console.log('Function is ready');
+	// console.log(moment().format('dddd') + moment().format('MMM Do'));
+	// console.log(moment().calendar());
+	// console.log(moment().format());
+	// // ===================================================================
+	// // Testing to see if the moment is console logging correctly
+	// const m = moment();
+	// console.log(m.toString());
 
-	//this should be the empty area to allow the user to add text.
-	var userInput = '';
+	// //this should be the empty area to allow the user to add text.
+	// var userInput = '';
 
-	//moment.js code should get current date....
 	$('#currentDay').text(moment().format('dddd, MMMM Do YYYY'));
-
-	//userText created for user content.
-	let userText = $('#userTextContent');
-
-	//creating for each object(entry) of the array calendarData appending the rows and th,td, buttons
+	var tbody = $('#calendar-content');
 	calendarData.forEach((entry) => {
-		//current hour
 		var currentHour = moment().hour();
 		var styleClass = '';
 
-		// CSS styles to change the color depending on the current time
-		if (currentHour === entry.id) {
-			styleClass = 'present';
-		} else if (currentHour < entry.id) {
-			styleClass = 'future';
-		} else if (currentHour > entry.id) {
-			styleClass = 'past';
-		}
+		// //userText created for user content.
+		// let userText = $('#userTextContent');
+
+		//creating for each object(entry) of the array calendarData appending the rows and th,td, buttons
+		calendarData.forEach((entry) => {
+			//current hour
+			var currentHour = moment().hour();
+			var styleClass = '';
+
+			// CSS styles to change the color depending on the current time
+			if (currentHour === entry.id) {
+				styleClass = 'present';
+			} else if (currentHour < entry.id) {
+				styleClass = 'future';
+			} else if (currentHour > entry.id) {
+				styleClass = 'past';
+			}
+		});
 	});
 
 	// save button event ===================================================
-	$('.saveButton').on('click', saveEvent);
+	$('.button').on('click', saveEvent);
 	//=====
 	function saveEvent() {
 		textareaId = $(this).attr('data-ref');
