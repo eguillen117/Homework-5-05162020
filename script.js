@@ -1,3 +1,51 @@
+var calendarData = [
+	{
+		hour: '8AM',
+		event: '',
+		id: 9
+	},
+	{
+		hour: '10AM',
+		event: '',
+		id: 10
+	},
+	{
+		hour: '11AM',
+		event: '',
+		id: 11
+	},
+	{
+		hour: '12PM',
+		event: '',
+		id: 12
+	},
+	{
+		hour: '1PM',
+		event: '',
+		id: 13
+	},
+	{
+		hour: '2PM',
+		event: '',
+		id: 14
+	},
+	{
+		hour: '3PM',
+		event: '',
+		id: 15
+	},
+	{
+		hour: '4PM',
+		event: '',
+		id: 16
+	},
+	{
+		hour: '5PM',
+		event: '',
+		id: 17
+	}
+];
+
 //getting the localStorage key values=================
 if (localStorage.getItem('calendarData') !== null) {
 	calendarData = JSON.parse(localStorage.getItem('calendarData'));
@@ -38,19 +86,6 @@ $(document).ready(function() {
 		} else if (currentHour > entry.id) {
 			styleClass = 'past';
 		}
-
-		tbody.append(`
-        <tr class="rowClass"">
-			<th style="background-color: whitesmoke; border-right: 3px solid teal; vertical-align: middle;">
-			 ${entry.hour}
-			</th>
-        	<td class="pl-0 ${styleClass}" style="width: 780px;padding-top: 0px;padding-bottom: 0px;padding-right: 0px;">
-				<textarea id="${entry.id}" style="width: 100%; padding-top: 0px;padding-bottom: 0px; padding-left: 0px; padding-right: 0px; height: 80px; border-left: 0px;" class="textareaClass description">${entry.event}</textarea>
-			</td>
-			<td class="pt-0 pb-0 pl-0">
-				<button data-ref="${entry.id}" class="saveBtn btn btn-lg bg-info text-white btn-outline-info waves-effect" style= "height: 80px; width: 100px;"><i class="fas fa-thumbtack" aria-hidden="true"></i></button>
-			</td>
-		</tr>`);
 	});
 
 	// save button event
@@ -70,7 +105,7 @@ $(document).ready(function() {
 			}
 		});
 
-		//save the set value(s) to the localStorage using JSON.stringify("object...")
+		//Local Storage to save the text the user enters
 		localStorage.setItem('calendarData', JSON.stringify(calendarData));
 	}
 });

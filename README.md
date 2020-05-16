@@ -8,10 +8,11 @@ To access the webpages please visit https://eguillen117.github.io/Homework-Week-
 
 To access the raw code you may visit github https://github.com/eguillen117/Homework-Week-3-EG-05022020
 
-### Prerequisites
+### Tools Used
 GitHub
 Visual Studio Code
-
+Moment.Js
+JQUERY
 
 ### Screenshots and Examples
 
