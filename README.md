@@ -1,12 +1,12 @@
-# Unit 03 Password Generator Homework
+# Unit 05 Work Day Scheduler
 
 For this homework assisgnment we are tasked to create responsive Password Generator page using Javascript. 
 
 ## Getting Started
 
-To access the webpages please visit https://eguillen117.github.io/Homework-Week-3-EG-05022020/
+To access the webpages please visit https://eguillen117.github.io/Homework-Week-5-EG-05162020/
 
-To access the raw code you may visit github https://github.com/eguillen117/Homework-Week-3-EG-05022020
+To access the raw code you may visit github https://github.com/eguillen117/Homework-Week-5-EG-05162020
 
 ### Tools Used
 GitHub
