@@ -1,4 +1,16 @@
-var calendarData = time - block;
+// $(save1).on('click', function(event) {
+// 	text1 = $('#textArea').val();
+// 	console.log("userInput is '" + text + "'");
+
+// 	// Setting variables for the value of saveButton2
+// 	save1 = $('#saveButton1');
+// 	if (text1 !== '') {
+// 		alert('storing entry...');
+// 		localStorage.setItem('8:00 am', text1);
+// 	} else {
+// 		alert("entries can't be blank!");
+// 	}
+// });
 
 //getting the localStorage key values=================
 if (localStorage.getItem('calendarData') !== null) {
@@ -24,29 +36,18 @@ $(document).ready(function() {
 	calendarData.forEach((entry) => {
 		var currentHour = moment().hour();
 		var styleClass = '';
-
-		// //userText created for user content.
-		// let userText = $('#userTextContent');
-
-		//creating for each object(entry) of the array calendarData appending the rows and th,td, buttons
-		calendarData.forEach((entry) => {
-			//current hour
-			var currentHour = moment().hour();
-			var styleClass = '';
-
-			// CSS styles to change the color depending on the current time
-			if (currentHour === entry.id) {
-				styleClass = 'present';
-			} else if (currentHour < entry.id) {
-				styleClass = 'future';
-			} else if (currentHour > entry.id) {
-				styleClass = 'past';
-			}
-		});
+		// CSS styles to change the color depending on the current time
+		if (currentHour === entry.id) {
+			styleClass = 'present';
+		} else if (currentHour < entry.id) {
+			styleClass = 'future';
+		} else if (currentHour > entry.id) {
+			styleClass = 'past';
+		}
 	});
 
 	// save button event ===================================================
-	$('.button').on('click', saveEvent);
+	$('.saveBtn').on('click', saveEvent);
 	//=====
 	function saveEvent() {
 		textareaId = $(this).attr('data-ref');

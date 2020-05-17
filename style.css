@@ -31,9 +31,11 @@ textarea {
 }
 
 .row {
-	white-space: pre-wrap;
-	height: 80px;
-	border-top: 1px solid white;
+	background-color: whitesmoke;
+	border-right: 3px solid teal;
+	vertical-align: middle;
+	border-top: teal;
+	border-bottom: black;
 }
 
 .hour {
