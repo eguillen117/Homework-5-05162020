@@ -4,9 +4,8 @@ For this homework assisgnment we are tasked to create responsive Password Genera
 
 ## Getting Started
 
-To access the webpages please visit https://eguillen117.github.io/Homework-Week-5-EG-05162020/
+To access the webpages please visit https://eguillen2305.github.io/Unit-05-Work-Day-Scheduler/.
 
-To access the raw code you may visit github https://github.com/eguillen117/Homework-Week-5-EG-05162020
 
 ### Tools Used
 GitHub
@@ -31,7 +30,7 @@ JQUERY
 
 ## Authors
 
-* **Eduardo Guillen ** - [UTSA BCS](https://github.com/eguillen117
+* **Eduardo Guillen ** - [UTSA BCS](https://github.com/eguillen2035
 
 
 ## License
