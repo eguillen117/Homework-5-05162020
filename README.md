@@ -1,19 +1,11 @@
 # Work Day Scheduler
 
-Simple work day scheduler application
+Simple work day scheduler application to help plan your day. 
 
 ## Getting Started
 
 To access the webpages please visit https://eguillen2305.github.io/Unit-05-Work-Day-Scheduler/.
 
-
-### Screenshots and Examples
-
-![](screenshots/screenshot1.png)
-
-![](screenshots/screenshot2.png)
-
-![](screenshots/screenshot3.png)
 
 ## Built With Visual Studio Code
 
