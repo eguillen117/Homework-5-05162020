@@ -1,17 +1,11 @@
-# Unit 05 Work Day Scheduler
+# Work Day Scheduler
 
-For this homework assisgnment we are tasked to create responsive Password Generator page using Javascript. 
+Simple work day scheduler application
 
 ## Getting Started
 
 To access the webpages please visit https://eguillen2305.github.io/Unit-05-Work-Day-Scheduler/.
 
-
-### Tools Used
-GitHub
-Visual Studio Code
-Moment.Js
-JQUERY
 
 ### Screenshots and Examples
 
@@ -28,18 +22,12 @@ JQUERY
 * [CSS and HTML]
 
 
-## Authors
+## Technology Used
+Javascript
+ 
 
-* **Eduardo Guillen ** - [UTSA BCS](https://github.com/eguillen2035
-
+## Author
+eguillen2035
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to Joe Exotic
-* Godfre,Best for support
-* My dog, Elise
-
+This project is licensed under the terms of the **MIT** license.
